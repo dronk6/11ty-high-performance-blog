@@ -10,33 +10,7 @@
     
   
   <url>
-    <loc>https://update-me.com/posts/firstpost/</loc>
-    <lastmod>2022-02-27T23:58:41.000Z</lastmod>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  <url>
     <loc>https://update-me.com/posts/secondpost/</loc>
-    <lastmod>2022-02-27T23:58:41.000Z</lastmod>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  <url>
-    <loc>https://update-me.com/posts/sixthpostdraft/</loc>
     <lastmod>2022-02-27T23:58:41.000Z</lastmod>
   </url>
   
@@ -63,21 +37,6 @@
   
   <url>
     <loc>https://update-me.com/posts/fourthpost/</loc>
-    <lastmod>2022-02-27T23:58:41.000Z</lastmod>
-  </url>
-  
-  
-  
-  
-  
-  
-    
-  
-  
-    
-  
-  <url>
-    <loc>https://update-me.com/posts/fifthpost/</loc>
     <lastmod>2022-02-27T23:58:41.000Z</lastmod>
   </url>
   
@@ -116,19 +75,6 @@
   
   
   <url>
-    <loc>https://update-me.com/</loc>
-    <lastmod>2022-02-28T00:00:21.853Z</lastmod>
-  </url>
-  
-  
-  
-  
-  
-  
-    
-  
-  
-  <url>
     <loc>https://update-me.com/page-list/</loc>
     <lastmod>2022-02-28T00:00:21.876Z</lastmod>
   </url>
@@ -155,7 +101,7 @@
   
   
   <url>
-    <loc>https://update-me.com/tags/another-tag/</loc>
+    <loc>https://update-me.com/tags/number-2/</loc>
     <lastmod>2022-02-28T00:00:21.895Z</lastmod>
   </url>
   
@@ -168,7 +114,7 @@
   
   
   <url>
-    <loc>https://update-me.com/tags/number-2/</loc>
+    <loc>https://update-me.com/tags/another-tag/</loc>
     <lastmod>2022-02-28T00:00:21.895Z</lastmod>
   </url>
   
@@ -183,5 +129,18 @@
   <url>
     <loc>https://update-me.com/tags/second-tag/</loc>
     <lastmod>2022-02-28T00:00:21.895Z</lastmod>
+  </url>
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <url>
+    <loc>https://update-me.com/</loc>
+    <lastmod>2022-02-28T01:42:21.040Z</lastmod>
   </url>
 </urlset>
