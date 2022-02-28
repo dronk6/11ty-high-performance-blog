@@ -5,7 +5,7 @@
 	
 	<link href="https://update-me.com/feed/feed.xml" rel="self"/>
 	<link href="https://update-me.com"/>
-	<updated>2018-09-29T20:00:00-04:00</updated>
+	<updated>2022-02-23T19:00:00-05:00</updated>
 	<id>https://update-me.com</id>
 	<author>
 		<name>Drew Ronk</name>
@@ -13,70 +13,159 @@
 	</author>
 	
 	<entry>
-		<title>This is my second post.</title>
+		<title>Getting Started with Docker: Windows 11</title>
+		<link href="https://update-me.com/posts/firstpost/"/>
+		<updated>2022-01-15T19:00:00-05:00</updated>
+		<id>https://update-me.com/posts/firstpost/</id>
+		<content type="html">
+		  &lt;p&gt;Before writing this article, I had never worked with Docker before. In fact, I didn&#39;t even know what it was. However, through a lot of Googling and trial-and-error, I found enough information to go from crawling to slowly walking. Let&#39;s get you there too.&lt;/p&gt;
+&lt;p&gt;In this demo, I&#39;ll be covering what Docker is, how to download it on Windows 11 OS, and getting Docker Desktop up and running with an example GitHub repo.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-docker%3F&quot;&gt;What is Docker? &lt;a class=&quot;direct-link&quot; href=&quot;#what-is-docker%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Docker is a platform-as-a-service (PAAS) software that allows users to put their entire application into a virtual &amp;quot;container.&amp;quot; This means that, rather than using your desktop to host an application, you can isolate your entire app within a single container--allowing you to manage multiple applications at once and utilize multiple versions of required software for your applications. All of this means you can manipulate your applications with more power and flexibility than was previously possible.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;For more information about containers and Docker&#39;s logic, go to &lt;a href=&quot;https://www.docker.com/resources/what-container&quot;&gt;this guide&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;downloading-docker-for-windows-11&quot;&gt;Downloading Docker for Windows 11 &lt;a class=&quot;direct-link&quot; href=&quot;#downloading-docker-for-windows-11&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Before we get into the steps, you need to make sure your machine is running &lt;strong&gt;Windows 11&lt;/strong&gt; and is &lt;strong&gt;at least 64-bits&lt;/strong&gt;. You can do this by navigating to the Windows Settings application and going to System &amp;gt; About. In this menu, you&#39;ll find your System Type and Windows Edition.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;step-1%3A-download-and-install-docker-desktop&quot;&gt;Step 1: Download and Install Docker Desktop &lt;a class=&quot;direct-link&quot; href=&quot;#step-1%3A-download-and-install-docker-desktop&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Click &lt;a href=&quot;https://www.docker.com/products/docker-desktop&quot;&gt;this link&lt;/a&gt; and click the &amp;quot;Download for Windows&amp;quot; button. Your version should be automatically detected.&lt;/p&gt;
+&lt;p&gt;Once you&#39;ve downloaded the installer, run it. At this point, you&#39;ll be taken through the setup wizard. When you finish this, you should be able to open the application.&lt;/p&gt;
+&lt;h3 id=&quot;step-2%3A-uh-oh.&quot;&gt;Step 2: Uh oh. &lt;a class=&quot;direct-link&quot; href=&quot;#step-2%3A-uh-oh.&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Docker has some ancillary tools that you also need to install just to get it up and running, so you&#39;ll likely receive an error when you first try to open it. It happened to me, and this is the error message I saw:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z13u1421kpytg6rszrww.png&quot; alt=&quot;Install WSL 2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Do not worry, the resolution is very simple...&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;step-3%3A-install-wsl-2&quot;&gt;Step 3: Install WSL 2 &lt;a class=&quot;direct-link&quot; href=&quot;#step-3%3A-install-wsl-2&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;WSL, or the Windows Subsystem for Linux, helps ensure Docker can compatibly run with your Windows computer. To install it, you can click the link in the error message shown above if it pops up on your screen when you try to open Docker, or you can go to &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package&quot;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Go through steps four and five of the instructions in that link, then try closing Docker and opening it again.&lt;/p&gt;
+&lt;h3 id=&quot;step-4%3A-the-tutorial&quot;&gt;Step 4: The Tutorial &lt;a class=&quot;direct-link&quot; href=&quot;#step-4%3A-the-tutorial&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;When you re-open Docker, it should open successfully and you&#39;ll see a tutorial. I highly recommend going through it, as it&#39;s brief but helpful in getting you acclimated to the system.&lt;/p&gt;
+&lt;h3 id=&quot;(optional)-step-5%3A-sign-in%2Fup&quot;&gt;(Optional) Step 5: Sign in/up &lt;a class=&quot;direct-link&quot; href=&quot;#(optional)-step-5%3A-sign-in%2Fup&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Since this was my first time using Docker, I had to sign up using the button in Docker Desktop. If you&#39;ve never used Docker, it&#39;s worth creating an account so you can use the platform to its fullest.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;At this point, you&#39;ve successfully installed Docker Desktop! Next, we&#39;ll take a look at how to get started with an example demo.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;example-with-haxcms&quot;&gt;Example with HAXcms &lt;a class=&quot;direct-link&quot; href=&quot;#example-with-haxcms&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To get started, we&#39;ll need a GitHub repo with a fully-fledged application. In my case, I&#39;ll be using &lt;a href=&quot;https://github.com/elmsln/haxcms&quot;&gt;HAXcms&lt;/a&gt;: a content management system that encapsulates the incredibly accessible authoring experience of &lt;a href=&quot;https://update-me.com/posts/firstpost/HAXTheWeb.org&quot;&gt;HAX&lt;/a&gt;. Let&#39;s get going!&lt;/p&gt;
+&lt;h3 id=&quot;step-1%3A-the-dev-environments-tab&quot;&gt;Step 1: The Dev Environments Tab &lt;a class=&quot;direct-link&quot; href=&quot;#step-1%3A-the-dev-environments-tab&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Navigate to the &amp;quot;Dev Environments&amp;quot; Tab in Docker Desktop, and click the &amp;quot;Create&amp;quot; button. Click the &amp;quot;Get Started&amp;quot; button in the guide that pops up, and the following screen should appear:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/czzwtb4zd5h5kmc0kidw.png&quot; alt=&quot;Create a Dev Environment&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;As you can see in the image, I&#39;ve already put a link into the &amp;quot;Enter the Git Repository&amp;quot; box. Below, I&#39;ll show you where to get a link to put in this box.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;step-2%3A-getting-the-https-link-from-a-github-repo&quot;&gt;Step 2: Getting the HTTPS Link From a GitHub Repo &lt;a class=&quot;direct-link&quot; href=&quot;#step-2%3A-getting-the-https-link-from-a-github-repo&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Navigate to your GitHub repo of choice, and select the green &amp;quot;Clone&amp;quot; button. A dropdown menu should populate, and you&#39;ll want to copy the link that appears in the HTTPS tab. Kind of like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4ukhzvyyy3w0dfj52nxd.png&quot; alt=&quot;Clone a Repo&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Paste the link you copied into the &amp;quot;Enter the Git Repository&amp;quot; box, and click the &amp;quot;Continue&amp;quot; button.&lt;/p&gt;
+&lt;p&gt;The Dev Environment will take a little time to generate, then you&#39;ll see a page indicating that it&#39;s all set up.&lt;/p&gt;
+&lt;h3 id=&quot;step-3%3A-get-going-in-vscode&quot;&gt;Step 3: Get Going in VSCode &lt;a class=&quot;direct-link&quot; href=&quot;#step-3%3A-get-going-in-vscode&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;At this point, your Dev Environments tab in Docker Desktop should be showing the container you created and your Containers/Apps tab will show that your container is running. Way to go!&lt;/p&gt;
+&lt;p&gt;Now, you can start working with your container in VSCode. To do this, click on the container listed in your Dev Environments tab. It should look similar to this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z6yn4g3wx3gmfitmt4ue.png&quot; alt=&quot;Dev Environments with Running Container&quot;&gt;&lt;/p&gt;
+&lt;p&gt;To open VSCode, just click the button. When you do, you may have to install one or two additional tools--or even VSCode itself if you don&#39;t have it already. If this is the case, follow the steps provided and you&#39;ll be viewing your container&#39;s code in no time!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;For more information about Docker and initial steps, feel free to view this &lt;a href=&quot;https://medium.com/free-code-camp/docker-simplified-96639a35ff36#06d9&quot;&gt;guide&lt;/a&gt; from freeCodeCamp. I found it very useful, especially for learning about Docker&#39;s basic commands. Good luck!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+			
+				
+				
+				&lt;img src=&quot;https://update-me.com/.netlify/functions/ga?v=1&amp;_v=j83&amp;t=pageview&amp;dr=https%3A%2F%2Frss-feed-reader.com&amp;_s=1&amp;dh=update-me.com&amp;dp=%2Fposts%2Ffirstpost%2F&amp;ul=en-us&amp;de=UTF-8&amp;dt=Getting%20Started%20with%20Docker%3A%20Windows%2011&amp;tid=GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;display:none&quot; alt=&quot;&quot;&gt;
+			
+		</content>
+	</entry>
+	
+	<entry>
+		<title>APIs: Fetching Data and an Example via Wikipedia</title>
 		<link href="https://update-me.com/posts/secondpost/"/>
-		<updated>2018-07-03T20:00:00-04:00</updated>
+		<updated>2022-01-30T19:00:00-05:00</updated>
 		<id>https://update-me.com/posts/secondpost/</id>
 		<content type="html">
-		  &lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;#section-header&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://update-me.com/posts/firstpost/&quot;&gt;First post&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://update-me.com/posts/thirdpost/&quot;&gt;Third post&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-&lt;h1 id=&quot;test-svg&quot;&gt;Test SVG &lt;a class=&quot;direct-link&quot; href=&quot;#test-svg&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://update-me.com/img/share.svg&quot; alt=&quot;Test Share SVG&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;test-relative-local-image&quot;&gt;Test Relative Local Image &lt;a class=&quot;direct-link&quot; href=&quot;#test-relative-local-image&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://update-me.com/img/doener.jpg&quot; alt=&quot;Test Share SVG&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;test-png&quot;&gt;Test PNG &lt;a class=&quot;direct-link&quot; href=&quot;#test-png&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.clipartmax.com/png/full/0-9896_film-clipart-free-to-use-public-domain-movie-clip-art-directors-board.png&quot; alt=&quot;Png By @clipartmax.com&quot;&gt;&lt;/p&gt;
+		  &lt;p&gt;APIs, or Application Programming Interfaces, are an incredibly useful tool for accessing data from an external source. Retrieving, storing, and using this data typically requires a programmatic API call, which can be done using a language such as JavaScript. In this article, we&#39;ll be discussing how data can be retrieved via the fetch() function in JavaScript, then analyzing a commonly-used API that can be accessed through an HTML tag: the &lt;a href=&quot;https://en.wikipedia.org/w/api.php&quot;&gt;Wikipedia API&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;fetch()ing-data&quot;&gt;fetch()ing Data &lt;a class=&quot;direct-link&quot; href=&quot;#fetch()ing-data&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;When working with an API, a common starting point is calling upon the API to retrieve some information. This info can then be stored in a variable within your application, which gives you plenty of options for using and manipulating that data. One way this can be done in JavaScript is using the fetch() function, which directly calls upon an API by treating the API&#39;s link as a parameter.&lt;/p&gt;
+&lt;p&gt;Below is an example fetch() call, which accesses an API called &amp;quot;FreeGeoIP&amp;quot; that returns a user&#39;s IP address when called:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6ir42tefplcrd62frr0x.png&quot; alt=&quot;getGEOIPData() function breakdown&quot;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the getGEOIPData() function handles the fetch() method call, where the API&#39;s link is one of the parameters passed into fetch(). The API call reaches out to the API at this link, then uses the response that is returned to determine whether to store data from the fetch() call. In this case, a successful API call would grant us access to information such as the IP address&#39; geographic coordinates, city, and state, which we are storing further down in the getGEOIPData() function.&lt;/p&gt;
+&lt;p&gt;Since I&#39;m working with &lt;a href=&quot;https://lit.dev/&quot;&gt;LitElement&lt;/a&gt; in this case, you can see I&#39;m assigning the data I got back to global variables that were initially created in the application&#39;s constructor. This allows me to mutate the location information in my constructor, and carry my data changes throughout my entire web page, every time I make another call to the API--such as when I press a button to call it or refresh the page.&lt;/p&gt;
+&lt;h2 id=&quot;the-wikipedia-api&quot;&gt;The Wikipedia API &lt;a class=&quot;direct-link&quot; href=&quot;#the-wikipedia-api&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Using the data we stored in getGEOIPData(), we could learn more about the location that our IP address is tied to by working with the Wikipedia API. The Wikipedia API can be accessed using a fetch() call as well, or through &lt;a href=&quot;https://www.npmjs.com/package/@lrnwebcomponents/wikipedia-query&quot;&gt;this&lt;/a&gt; very cool HTML tag that simplifies the call into an embeddable component. For this article, we&#39;ll be using that tag, which is called &lt;code&gt;wikipedia-query&lt;/code&gt;. This is incredibly useful, as a simple import and implementation of the tag allows us to embed a preview of a Wikipedia article directly into our web page, like so:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/o7ss8y6ll01pgsoj00i2.png&quot; alt=&quot;Embedded Wikipedia Article Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;All you&#39;d end up adding to your HTML, or in my case the render() function in my Lit implementation, is a &lt;code&gt;wikipedia-query&lt;/code&gt; tag with the search parameter tied to whatever I want. Below, you can see the three different options I went with--all of which are information I pulled from the IP address data returned from the API call discussed earlier:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ngrg73lpu0ei5r5q5k3t.png&quot; alt=&quot;Wikipedia-query tags&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Using a tag like those pictured above and an import call, I could very easily learn more about my current location based on the IP address that my device is using to access the internet--all in a web page!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here&#39;s the import statement you&#39;d need to make it work: &lt;code&gt;import { WikipediaQuery } from &#39;@lrnwebcomponents/wikipedia-query/wikipedia-query.js&#39;;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;All of this is possible because Wikipedia&#39;s powerful API allows a user to enter a search term into an API call, and returns bundled information that can then be elegantly presented to a user.&lt;/p&gt;
+&lt;p&gt;This is just scratching the surface of APIs and their capabilities, but it shows just how limitless their uses and possibilities can be!&lt;/p&gt;
 
 			
 				
 				
-				&lt;img src=&quot;https://update-me.com/.netlify/functions/ga?v=1&amp;_v=j83&amp;t=pageview&amp;dr=https%3A%2F%2Frss-feed-reader.com&amp;_s=1&amp;dh=update-me.com&amp;dp=%2Fposts%2Fsecondpost%2F&amp;ul=en-us&amp;de=UTF-8&amp;dt=This%20is%20my%20second%20post.&amp;tid=GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;display:none&quot; alt=&quot;&quot;&gt;
+				&lt;img src=&quot;https://update-me.com/.netlify/functions/ga?v=1&amp;_v=j83&amp;t=pageview&amp;dr=https%3A%2F%2Frss-feed-reader.com&amp;_s=1&amp;dh=update-me.com&amp;dp=%2Fposts%2Fsecondpost%2F&amp;ul=en-us&amp;de=UTF-8&amp;dt=APIs%3A%20Fetching%20Data%20and%20an%20Example%20via%20Wikipedia&amp;tid=GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;display:none&quot; alt=&quot;&quot;&gt;
 			
 		</content>
 	</entry>
 	
 	<entry>
-		<title>This is my third post.</title>
+		<title>Getting Started with Docker: Docker Playground</title>
 		<link href="https://update-me.com/posts/thirdpost/"/>
-		<updated>2018-08-23T20:00:00-04:00</updated>
+		<updated>2022-02-23T19:00:00-05:00</updated>
 		<id>https://update-me.com/posts/thirdpost/</id>
 		<content type="html">
-		  &lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;ins class=&quot;highlight-line highlight-line-add&quot;&gt;	&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/ins&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;del class=&quot;highlight-line highlight-line-remove&quot;&gt;	counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/del&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;#section-header&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+		  &lt;p&gt;In a previous article, I stumbled my way through a tutorial on &lt;a href=&quot;https://dev.to/dronk6/getting-started-with-docker-windows-11-3ihn&quot;&gt;how to install Docker for Windows 11&lt;/a&gt;; however, I made it pretty clear I had &lt;em&gt;no idea&lt;/em&gt; how to use Docker (let alone what it was) at the time. So, I&#39;m going to use this post to learn more by starting the tutorial on Docker&#39;s website: &lt;a href=&quot;https://www.docker.com/101-tutorial&quot;&gt;Docker Playground&lt;/a&gt;, which is their free way to learn the system. I&#39;m also going to talk a little about Docker itself, and discuss how to create a Dockerfile using &lt;a href=&quot;https://www.docker.com/101-tutorial&quot;&gt;this microservice&lt;/a&gt; as a backdrop. Let&#39;s get to it!&lt;/p&gt;
+&lt;h2 id=&quot;why-is-docker-so-powerful%3F&quot;&gt;Why is Docker so Powerful? &lt;a class=&quot;direct-link&quot; href=&quot;#why-is-docker-so-powerful%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I talk a little about this in that post I linked above, but Docker is &lt;em&gt;incredibly&lt;/em&gt; powerful. This is because container-based architecture allows for the creation of instances of an application, allowing a developer to customize and replicate these instances as much as they want without interfering with anything else on a user&#39;s system.&lt;/p&gt;
+&lt;p&gt;Docker takes this to another level, as it allows developers to toss everything needed to run an app into one easily-distributed package, then ship it to any system that can support the application. This makes the application easier to manage--because they&#39;re not relying on users to have (most) of the necessary dependencies--and infinitely scalable. Which is a huge deal, because it allows users to have a faster, lighter experience with an application that is still tied into the same backend.&lt;/p&gt;
+&lt;p&gt;With that in mind, let&#39;s try it out.&lt;/p&gt;
+&lt;h2 id=&quot;docker-playground&quot;&gt;Docker Playground &lt;a class=&quot;direct-link&quot; href=&quot;#docker-playground&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.docker.com/101-tutorial&quot;&gt;Docker Playground&lt;/a&gt; is Docker&#39;s free, online tutorial for learning Docker. Once you get through the initial steps, they provide a verbose guide that can get you going with a container. So, I&#39;ll go through the first couple of steps to get going then I&#39;ll leave the rest to you!&lt;/p&gt;
+&lt;h3 id=&quot;step-1%3A-access-play-with-docker-and-sign-in&quot;&gt;Step 1: Access Play With Docker and Sign In &lt;a class=&quot;direct-link&quot; href=&quot;#step-1%3A-access-play-with-docker-and-sign-in&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;First, we&#39;ll navigate to the &lt;a href=&quot;https://labs.play-with-docker.com/&quot;&gt;Play with Docker&lt;/a&gt; starting page, which should look like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3d7zld6ibh1fhc4dpsg7.png&quot; alt=&quot;Play with Docker Start Page&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Click Start, and you&#39;ll be prompted to sign in with a GitHub or Docker account. Feel free to do whichever is easier for you, but do not purchase anything if you decide to create a Docker account--the tutorial and Docker Playground are free.&lt;/p&gt;
+&lt;h3 id=&quot;step-2%3A-create-a-new-instance&quot;&gt;Step 2: Create a New Instance &lt;a class=&quot;direct-link&quot; href=&quot;#step-2%3A-create-a-new-instance&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Once you are signed in, click the &amp;quot;Add New Instance&amp;quot; button to create a virtualized container in Docker Playground. If you did so successfully, your page will look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ffbt819cfbb429eehuyk.png&quot; alt=&quot;Instance Created Page&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;step-3%3A-access-the-docker-101-tutorial&quot;&gt;Step 3: Access the Docker 101 Tutorial &lt;a class=&quot;direct-link&quot; href=&quot;#step-3%3A-access-the-docker-101-tutorial&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;To access the Docker 101 Tutorial, you actually have to use the instance you&#39;ve just created. So, type the following command in the Command Line Interface on Docker Playground and hit Enter:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker run -dp 80:80 docker/getting-started:pwd&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After this command processes, you&#39;ll see that a hyperlinked &amp;quot;&lt;strong&gt;80&lt;/strong&gt;&amp;quot; has appeared next to the &amp;quot;Open Port&amp;quot; button at the top of the screen, like so:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4fs6ze036aoqrqq5l6sq.png&quot; alt=&quot;Port 80 Hyperlink Image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Click this link, and you&#39;ll be taken to the Docker 101 tutorial. From there, you can navigate through the tutorial and learn more about Docker via the Docker Playground!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;creating-a-dockerfile&quot;&gt;Creating a Dockerfile &lt;a class=&quot;direct-link&quot; href=&quot;#creating-a-dockerfile&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A Dockerfile is a set of instructions, called a &lt;a href=&quot;https://searchitoperations.techtarget.com/definition/Docker-image&quot;&gt;Docker image&lt;/a&gt;, which Docker uses to build your application within a container. As these instructions essentially define how the Docker container will handle the process of running your application, it is important that this file exists in your container prior to you attempting to run your application. Below, we&#39;ll look at an example of a Dockerfile that was created for a &lt;a href=&quot;https://github.com/heyMP/ist402-docker/tree/master/labs/7-news-api-microservice&quot;&gt;NewsAPI Microservice&lt;/a&gt;, then show what having this Dockerfile properly configured can do for you.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&quot;how-are-dockerfiles-created%3F&quot;&gt;How are Dockerfiles created? &lt;a class=&quot;direct-link&quot; href=&quot;#how-are-dockerfiles-created%3F&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;When you&#39;re configuring a container, typically you&#39;ll be creating a custom Dockerfile. To do so, you just create a text file titled &amp;quot;Dockerfile&amp;quot; in your container&#39;s directory, then insert the commands necessary for your container.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;what&#39;s-in-a-dockerfile%3F&quot;&gt;What&#39;s in a Dockerfile? &lt;a class=&quot;direct-link&quot; href=&quot;#what&#39;s-in-a-dockerfile%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This can depend on what the Dockerfile is being used for, but in this case we actually have two: one for the visual web component, and another for the server that accesses an API. To avoid confusion, we&#39;ll just focus on the server. Below is what we have in that file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FROM node:12
+
+WORKDIR /home/node/app
+
+COPY package.json ./
+RUN yarn install
+
+COPY . .
+
+CMD [ &amp;quot;yarn&amp;quot;, &amp;quot;start&amp;quot; ]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The capitalized words in this file represent commands, which Docker uses to create an environment conducive for your application to run--regardless of the system it&#39;s on. Let&#39;s look at each of these commands:&lt;/p&gt;
+&lt;h4 id=&quot;from&quot;&gt;FROM &lt;a class=&quot;direct-link&quot; href=&quot;#from&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The first thing we see here is the &amp;quot;FROM&amp;quot; instruction. This is always the first command in a Dockerfile, as it indicates that this Dockerfile is the base image is for the container.&lt;/p&gt;
+&lt;h4 id=&quot;workdir&quot;&gt;WORKDIR &lt;a class=&quot;direct-link&quot; href=&quot;#workdir&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;This instruction key establishes the working directory where subsequent commands will be run.&lt;/p&gt;
+&lt;h4 id=&quot;copy&quot;&gt;COPY &lt;a class=&quot;direct-link&quot; href=&quot;#copy&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;The first time this command is shown, it&#39;s copying our application&#39;s package.json file into the working directory. The way we can see this is the &lt;code&gt;./&lt;/code&gt; that follows &lt;code&gt;package.json&lt;/code&gt; in the command, which signifies that this is the destination for our copy. In this case, copying this will allow us to then use that package.json to install the app&#39;s necessary dependencies using:&lt;/p&gt;
+&lt;h4 id=&quot;run&quot;&gt;RUN &lt;a class=&quot;direct-link&quot; href=&quot;#run&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;RUN can be used in a variety of ways, but in this example it&#39;s being used to run a &lt;code&gt;yarn install&lt;/code&gt; command--which installs all the dependencies needed to allow our application to run in the Docker container.&lt;/p&gt;
+&lt;h4 id=&quot;copy-(again)&quot;&gt;COPY (again) &lt;a class=&quot;direct-link&quot; href=&quot;#copy-(again)&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;We already talked a little about COPY, but this time the thing that&#39;s being copied is a shorthand, &lt;code&gt;.  .&lt;/code&gt;, which indicates that everything (&lt;code&gt;.&lt;/code&gt;) is being copied to the working directory, allowing the container to be configured to work with the application.&lt;/p&gt;
+&lt;h4 id=&quot;cmd&quot;&gt;CMD &lt;a class=&quot;direct-link&quot; href=&quot;#cmd&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;And finally, we have CMD. The CMD command takes in an array of parameterized commands, which will then be run when the Dockerfile is used to build your application. So, this CMD&#39;s array equates to &lt;code&gt;yarn start&lt;/code&gt;, which is a command that uses &lt;a href=&quot;https://yarnpkg.com/&quot;&gt;yarn&lt;/a&gt; to start the application. As this is the final command in the Dockerfile, at this point our application is built within the container!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;If you&#39;d like to learn more about Dockerfile commands, &lt;a href=&quot;https://takacsmark.com/dockerfile-tutorial-by-example-dockerfile-best-practices-2018/#dockerfile-key-instructions-best-practices&quot;&gt;this article&lt;/a&gt; breaks each down with great examples.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;what&#39;s-next%3F&quot;&gt;What&#39;s Next? &lt;a class=&quot;direct-link&quot; href=&quot;#what&#39;s-next%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;At this point, you can run the application since you&#39;ve successfully built it using the Dockerfile. In the case of &lt;a href=&quot;https://github.com/heyMP/ist402-docker/tree/master/labs/7-news-api-microservice&quot;&gt;our example&lt;/a&gt;, this would involve running the &lt;code&gt;docker-compose up&lt;/code&gt; command. Which allows you to view our example application&#39;s front-end, which lists hyperlinked articles from NewsAPI:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/avhsunt5pbax3pxu0t97.png&quot; alt=&quot;NewsApp Results&quot;&gt;&lt;/p&gt;
 
 			
 				
 				
-				&lt;img src=&quot;https://update-me.com/.netlify/functions/ga?v=1&amp;_v=j83&amp;t=pageview&amp;dr=https%3A%2F%2Frss-feed-reader.com&amp;_s=1&amp;dh=update-me.com&amp;dp=%2Fposts%2Fthirdpost%2F&amp;ul=en-us&amp;de=UTF-8&amp;dt=This%20is%20my%20third%20post.&amp;tid=GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;display:none&quot; alt=&quot;&quot;&gt;
-			
-		</content>
-	</entry>
-	
-	<entry>
-		<title>This is my fourth post.</title>
-		<link href="https://update-me.com/posts/fourthpost/"/>
-		<updated>2018-09-29T20:00:00-04:00</updated>
-		<id>https://update-me.com/posts/fourthpost/</id>
-		<content type="html">
-		  &lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2020/08/25/11/11/zebra-5516455_1280.jpg&quot; alt=&quot;An image&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;#section-header&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-&lt;h2 id=&quot;a-sample-gif&quot;&gt;A sample GIF &lt;a class=&quot;direct-link&quot; href=&quot;#a-sample-gif&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://thumbs.gfycat.com/EqualCreativeCowbird-max-1mb.gif&quot; alt=&quot;A sample GIF&quot;&gt;&lt;/p&gt;
-
-			
-				
-				
-				&lt;img src=&quot;https://update-me.com/.netlify/functions/ga?v=1&amp;_v=j83&amp;t=pageview&amp;dr=https%3A%2F%2Frss-feed-reader.com&amp;_s=1&amp;dh=update-me.com&amp;dp=%2Fposts%2Ffourthpost%2F&amp;ul=en-us&amp;de=UTF-8&amp;dt=This%20is%20my%20fourth%20post.&amp;tid=GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;display:none&quot; alt=&quot;&quot;&gt;
+				&lt;img src=&quot;https://update-me.com/.netlify/functions/ga?v=1&amp;_v=j83&amp;t=pageview&amp;dr=https%3A%2F%2Frss-feed-reader.com&amp;_s=1&amp;dh=update-me.com&amp;dp=%2Fposts%2Fthirdpost%2F&amp;ul=en-us&amp;de=UTF-8&amp;dt=Getting%20Started%20with%20Docker%3A%20Docker%20Playground&amp;tid=GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;display:none&quot; alt=&quot;&quot;&gt;
 			
 		</content>
 	</entry>

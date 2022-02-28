@@ -6,6 +6,23 @@
   
   
   
+    
+  
+  
+    
+  
+  <url>
+    <loc>https://update-me.com/posts/firstpost/</loc>
+    <lastmod>2022-02-28T02:31:47.000Z</lastmod>
+  </url>
+  
+  
+  
+  
+  
+  
+    
+  
   
     
   
@@ -19,24 +36,13 @@
   
   
   
+    
+  
   
     
   
   <url>
     <loc>https://update-me.com/posts/thirdpost/</loc>
-    <lastmod>2022-02-27T23:58:41.000Z</lastmod>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  <url>
-    <loc>https://update-me.com/posts/fourthpost/</loc>
     <lastmod>2022-02-27T23:58:41.000Z</lastmod>
   </url>
   
@@ -101,7 +107,7 @@
   
   
   <url>
-    <loc>https://update-me.com/tags/number-2/</loc>
+    <loc>https://update-me.com/tags/api/</loc>
     <lastmod>2022-02-28T00:00:21.895Z</lastmod>
   </url>
   
@@ -114,7 +120,7 @@
   
   
   <url>
-    <loc>https://update-me.com/tags/another-tag/</loc>
+    <loc>https://update-me.com/tags/javascript/</loc>
     <lastmod>2022-02-28T00:00:21.895Z</lastmod>
   </url>
   
@@ -127,7 +133,7 @@
   
   
   <url>
-    <loc>https://update-me.com/tags/second-tag/</loc>
+    <loc>https://update-me.com/tags/beginners/</loc>
     <lastmod>2022-02-28T00:00:21.895Z</lastmod>
   </url>
   
@@ -138,9 +144,37 @@
   
     
   
+  
+  <url>
+    <loc>https://update-me.com/tags/docker/</loc>
+    <lastmod>2022-02-28T00:00:21.895Z</lastmod>
+  </url>
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <url>
+    <loc>https://update-me.com/tags/tutorial/</loc>
+    <lastmod>2022-02-28T00:00:21.895Z</lastmod>
+  </url>
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
   
   <url>
     <loc>https://update-me.com/</loc>
-    <lastmod>2022-02-28T01:42:21.040Z</lastmod>
+    <lastmod>2022-02-28T02:31:47.000Z</lastmod>
   </url>
 </urlset>
