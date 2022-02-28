@@ -6,6 +6,17 @@
   
   
   
+  
+  <url>
+    <loc>https://update-me.com/posts/sample/</loc>
+    <lastmod>2020-07-12T00:00:00.000Z</lastmod>
+  </url>
+  
+  
+  
+  
+  
+  
     
   
   
@@ -13,7 +24,7 @@
   
   <url>
     <loc>https://update-me.com/posts/firstpost/</loc>
-    <lastmod>2022-02-28T02:31:47.000Z</lastmod>
+    <lastmod>2022-02-28T02:54:22.000Z</lastmod>
   </url>
   
   
@@ -28,7 +39,7 @@
   
   <url>
     <loc>https://update-me.com/posts/secondpost/</loc>
-    <lastmod>2022-02-27T23:58:41.000Z</lastmod>
+    <lastmod>2022-02-28T02:54:22.000Z</lastmod>
   </url>
   
   
@@ -43,7 +54,7 @@
   
   <url>
     <loc>https://update-me.com/posts/thirdpost/</loc>
-    <lastmod>2022-02-27T23:58:41.000Z</lastmod>
+    <lastmod>2022-02-28T02:54:22.000Z</lastmod>
   </url>
   
   
@@ -160,6 +171,19 @@
   
   <url>
     <loc>https://update-me.com/tags/tutorial/</loc>
+    <lastmod>2022-02-28T00:00:21.895Z</lastmod>
+  </url>
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <url>
+    <loc>https://update-me.com/tags/another-tag/</loc>
     <lastmod>2022-02-28T00:00:21.895Z</lastmod>
   </url>
   

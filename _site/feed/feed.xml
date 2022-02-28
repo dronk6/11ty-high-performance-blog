@@ -13,6 +13,27 @@
 	</author>
 	
 	<entry>
+		<title>This is my first post.</title>
+		<link href="https://update-me.com/posts/sample/"/>
+		<updated>2018-04-30T20:00:00-04:00</updated>
+		<id>https://update-me.com/posts/sample/</id>
+		<content type="html">
+		  &lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
+&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.pixabay.com/photo/2020/08/30/20/54/rice-field-5530707_1280.jpg&quot; alt=&quot;An image&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot;&gt;Section Header &lt;a class=&quot;direct-link&quot; href=&quot;#section-header&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;// this is a command&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;function myCommand() {&lt;/span&gt;&lt;br&gt;&lt;mark class=&quot;highlight-line highlight-line-active&quot;&gt;	let counter = 0;&lt;/mark&gt;&lt;br&gt;&lt;mark class=&quot;highlight-line highlight-line-active&quot;&gt;	counter++;&lt;/mark&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;highlight-line&quot;&gt;console.log(&#39;Test&#39;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+			
+				
+				
+				&lt;img src=&quot;https://update-me.com/.netlify/functions/ga?v=1&amp;_v=j83&amp;t=pageview&amp;dr=https%3A%2F%2Frss-feed-reader.com&amp;_s=1&amp;dh=update-me.com&amp;dp=%2Fposts%2Fsample%2F&amp;ul=en-us&amp;de=UTF-8&amp;dt=This%20is%20my%20first%20post.&amp;tid=GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;display:none&quot; alt=&quot;&quot;&gt;
+			
+		</content>
+	</entry>
+	
+	<entry>
 		<title>Getting Started with Docker: Windows 11</title>
 		<link href="https://update-me.com/posts/firstpost/"/>
 		<updated>2022-01-15T19:00:00-05:00</updated>
